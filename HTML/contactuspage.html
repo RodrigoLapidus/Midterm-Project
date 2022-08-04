@@ -14,42 +14,48 @@
     
     <section>
 
-        <nav class="siteTop">
+        <nav class="siteTop container">
             <div class="circleLogo">
-                <a href=""><img></a>
+                <a href="#">
+                    <img src="/../midterm-project-project-assets/logos/circle.svg" alt="Circle logo">
+                </a>
             </div>
             <div class="selectionTop">
-                <a href="">Home</a>
-                <a href="">Projects</a>
-                <a href="">Services</a>
+                <a id="selectionTopBlue" class="medium17" href="#">Home</a>
+                <a id="selectionTopGrey" class="medium17" href="#">Projects</a>
+                <a id="selectionTopGrey" class="medium17" href="#">Services</a>
             </div>
             <div class="contactButton">
-                <a href="">Contact</a>
+                <a href="#">Contact Us</a>
             </div>
         </nav>
 
-        <section class="contactUs">
+        <section class="contactUs container">
             <div id="contactUsHeading">
                 <h1>Contact Us</h1>
             </div>
             <form action="results.html" method="get" id="contactUsForm">
                 <div id="contactUsFormName">
                     <label for="name" id="contactUsFormNameHeading">Full Name*</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="&nbsp;&nbsp;Enter your full name" required>
                 </div>
                 <div id="contactUsFormContactInfo">
                     <div>
                         <label for="email" id="contactUsFormContactInfoEmailHeading">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="&nbsp;&nbsp;Enter your email address">
                     </div>
                     <div id="contactUsFormContactInfoPhone">
                         <label for="phone" id="contactUsFormContactInfoPhoneHeading">Phone</label>
-                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                        <br>
+                        <input type="tel" name="phone" id="phone" placeholder="&nbsp;&nbsp;Enter your phone number">
                     </div>
                 </div>
                 <div id="contactUsFormMessage">
                     <label for="message" id="contactUsFormMessageHeading">Message</label>
-                    <textarea name="message" id="message" placeholder="Write your message here"></textarea>
+                    <br>
+                    <textarea name="message" id="message" placeholder="&nbsp;Write your message here"></textarea>
                 </div>
                 <div id="contactUsFormSubmit">
                     <button type="submit">Submit</button>
@@ -57,10 +63,10 @@
             </form>
         </section>
 
-        <footer class="contactInfo">
+        <footer class="contactInfo container">
             <div class="contactInfoLeft">
                 <div id="contactInfoLeftLogo">
-                    <img src="" alt="Circle logo">
+                    <img src="../midterm-project-project-assets/logos/circle.svg" alt="Circle logo">
                 </div>
                 <div id="contactInfoLeftAddress">
                     <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
@@ -68,16 +74,16 @@
             </div>
             <div class="contactInfoRight">
                 <div class="contactInfoRightRows">
-                    <p class="contactInfoRightMiscellany">Team</p>
-                    <p class="contactInfoRightMiscellany">Press</p>
+                    <a class="contactInfoRightMiscellany" href="#">Team</a>
+                    <a class="contactInfoRightMiscellany" href="#">Press</a>
                 </div>
                 <div class="contactInfoRightRows">
-                    <p class="contactInfoRightMiscellany">Services</p>
-                    <p class="contactInfoRightMiscellany">Projects</p>
+                    <a class="contactInfoRightMiscellany" href="#">Services</a>
+                    <a class="contactInfoRightMiscellany" href="#">Projects</a>
                 </div>
                 <div class="contactInfoRightRows">
-                    <p class="contactInfoRightMiscellany">About Us</p>
-                    <p class="contactInfoRightMiscellany">Privacy Policy</p>
+                    <a class="contactInfoRightMiscellany" href="#">About Us</a>
+                    <a class="contactInfoRightMiscellany" href="#">Privacy Policy</a>
                 </div>
             </div>
         </footer>

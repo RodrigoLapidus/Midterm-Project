@@ -39,7 +39,7 @@ h4 {
     max-width: 950px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 100px 0 100px;
+    padding: 0 50px 0 50px;
   }
 
 .bigContainer {
@@ -193,7 +193,7 @@ nav {
 }
 
 .recentProjects {
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -208,13 +208,13 @@ nav {
 }
 
 .projectBoxes {
-    width: 340px;
+    width: 290px;
 }
 
 .projectImg img {
     object-fit: cover;
     width: 100%;
-    height:240px;
+    height:220px;
 }
 
 .projectText {
@@ -331,7 +331,7 @@ nav {
 .serviceBox {
     background-color: white;
     height: 230px;
-    width: 270px;
+    width: 220px;
     display: flex;
     align-items: center;
     padding: 35px;
@@ -422,3 +422,295 @@ nav {
     text-decoration: none;
     padding: 10px;
 }
+
+/*Aquí comienzan las media queries para pasar la web a mvóvil*/
+
+@media (max-width:599px) {
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #F2F4FC;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+    .bigContainer {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+    .landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 800px;
+    }
+
+    .leftHalf {
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .developmentStudio p {
+        text-align: center;
+        padding: 0;
+    }
+
+    .rightHalf {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .smilingGuy {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .smilingGuy > img {
+        max-height: 400px;
+    }
+
+    .creditCard > img {
+        display: none;
+    }
+    
+    .thumbsUp > img{
+        display: none;
+    }
+
+    #logoAmazon {
+        display: none;
+    }
+
+    .partners {
+        margin-top: 180px;
+        position: relative;
+        height: 170px;
+        text-align: center;
+    }
+
+    #logoAirbnb {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        padding-left: 15px;
+    }
+
+    #logoGoogle {
+        position: absolute;
+        top: 10%;
+        right:0%;
+        padding-right: 10px;
+    }
+
+    #logoMicrosoft{
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+    }
+
+    #logoFedex {
+        position: absolute;
+        bottom: 10%;
+        right: 0%;
+    }
+
+    .recentProjects {
+        margin-top: 50px;
+        align-items: center;
+    }
+    
+    .recentProjectBoxes {
+        height: 2000px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectBoxes {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projectImg img {
+        object-fit: cover;
+        width: 100%;
+        height:400px;
+    }
+
+    .projectText {
+        height: 300px;
+    }
+
+    .emojis {
+        display: none;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ourServicesBoxes {
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .serviceBox {
+        height:350px;
+        margin-bottom: 20px;
+    }
+
+    .mailingList {
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    .mailingListCenter {
+        width: 500px;
+    }
+
+    #mailingListInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+ 
+
+    #mailingListInputForm input {
+        width: 400px;
+    }
+    
+    #mailingListInputButton {
+        padding-right: 13px;
+        margin-top: 10px;
+    }
+
+    #mailingListInputButton button {
+        width: 400px;
+    }
+
+    .contactInfo {
+        margin: 70px 0 70px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contactInfo img {
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contactInfo p {
+        text-align: center;
+    }
+
+    
+
+
+}
+
+
+
+
+
+
+
+/* Aqui comineza el estilo especifico para project page*/
+
+.projectPageMainHeader h1 {
+    margin-bottom: 0;
+}
+
+.projectPageMainHeaderBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectPageMainHeaderBottomRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#projectPageMainBodyImg {
+    margin: 50px 0 50px 0;
+}
+
+#projectPageMainBodyImg img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Aqui comienza el estilo especifico de la pagina con el contact form*/
+
+.contactUs input, textarea {
+    background-color: #6B708D30;
+    border: none;
+    width: 100%;
+}
+
+.contactUs ::placeholder {
+    color: black;
+}
+
+#contactUsFormName input {
+    height: 30px;
+}
+
+#contactUsFormContactInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+#contactUsFormContactInfo input {
+    width: 260px;
+    height: 30px;
+}
+
+#contactUsFormMessage > textarea {
+    height: 120px;
+}
+
+#contactUsFormSubmit button {
+    margin-top: 20px;
+    height: 52px;
+    width: 100%;
+    background-color: #072AC8;
+    color: white;
+    border: 0;
+}
+
