@@ -1,12 +1,11 @@
+
 //Declaro dos variables con rutas diferentes para injectar la variable dentro de la llamada fetch t así puedo probar que me retorna cada variable
 
 const url1 = ("http://jsonplaceholder.typicode.com/posts/?_limit=3");
 const url2 = ("https://jsonplaceholder.typicode.com/posts")
 
 
-https://jsonplaceholder.typicode.com/posts/1
-
-// Calling an external API - bcall an externa API to showcase recent projects
+// Calling an external API - call an externa API to showcase recent projects
 function getHere() {
   fetch(url1)
     .then((response) => response.json())
@@ -17,7 +16,7 @@ function getHere() {
               <div class="projectBoxes">
               <div id="simplify">
                   <div class="projectImg">
-                      <img src="../midterm-project-project-assets/projects-section/1.jpg" alt="Geometric image 1">
+                      <img src="../midterm-project-project-assets/projects-section/${articulo.id}.jpg" alt="Geometric image 1">
                   </div>
                   <div class="projectText">
                       <div>
@@ -37,8 +36,6 @@ function getHere() {
 }
 
 getHere();
-
-
 
 
 

@@ -12,21 +12,34 @@
 </head>
 <body>
     
-    <section>
+    <section class="overallSection">
+
+        <div class="classMenu">
+            <ul class="menu">
+                <li><a class="menuItem" id="selectionTopBlue" href="../HTML/homepage.html">Home</a></li>
+                <li><a class="menuItem" id="selectionTopGrey" href="../HTML/homepage.html#recentProjectsHeading">Projects</a></li>
+                <li><a class="menuItem" id="selectionTopGrey" href="../HTML/homepage.html#servicesHeader">Services</a></li>
+              </ul>
+              <button class="hamburger">
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+              </button>
+        </div>
 
         <nav class="siteTop container">
             <div class="circleLogo">
-                <a href="#">
+                <a href="../HTML/homepage.html">
                     <img src="/../midterm-project-project-assets/logos/circle.svg" alt="Circle logo">
                 </a>
             </div>
             <div class="selectionTop">
-                <a id="selectionTopBlue" class="medium17" href="#">Home</a>
-                <a id="selectionTopGrey" class="medium17" href="#">Projects</a>
-                <a id="selectionTopGrey" class="medium17" href="#">Services</a>
+                <a id="selectionTopBlue" class="medium17" href="../HTML/homepage.html">Home</a>
+                <a id="selectionTopGrey" class="medium17" href="../HTML/homepage.html#recentProjectsHeading">Projects</a>
+                <a id="selectionTopGrey" class="medium17" href="../HTML/homepage.html#servicesHeader">Services</a>
             </div>
             <div class="contactButton">
-                <a href="#">Contact Us</a>
+                <a href="../HTML/contactuspage.html">Contact Us</a>
             </div>
         </nav>
 
@@ -34,7 +47,7 @@
             <div id="contactUsHeading">
                 <h1>Contact Us</h1>
             </div>
-            <form action="results.html" method="get" id="contactUsForm">
+            <form action="results.html" id="contactUsForm">
                 <div id="contactUsFormName">
                     <label for="name" id="contactUsFormNameHeading">Full Name*</label>
                     <br>
@@ -90,5 +103,7 @@
 
     </section>
 
+    <script src="../JS/contact.js"></script>
+    <script src="../JS/navbar.js"></script>
 </body>
 </html>
